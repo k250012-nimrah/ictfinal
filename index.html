@@ -28,6 +28,20 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Side Menu -->
+<div class="side-menu" id="sideMenu">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <ul>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Menu Icon -->
+<div class="menu-btn" onclick="openMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
             <div class="header-text">
                 <p>AI student at FAST NUCES</p>
                 <br>
@@ -168,6 +182,15 @@
         </div>
     </div>
     <div id="popupMessage" class="popup">Thank you! Your message has been submitted.</div>
+    <script>
+        function openMenu() {
+    document.getElementById("sideMenu").style.right = "0";
+}
+function closeMenu() {
+    document.getElementById("sideMenu").style.right = "-260px";
+}
+
+    </script>
     <script>
 
 document.addEventListener('DOMContentLoaded', function() {

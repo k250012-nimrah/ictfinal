@@ -420,3 +420,73 @@ form input, form textarea{
     cursor: pointer;
     color: #333;
 }
+/* Matching Side Menu to Website Theme */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(6px);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+    z-index: 2000;
+    padding-top: 100px;
+}
+
+/* Close button */
+.side-menu .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: #00eaff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.side-menu .close-btn:hover {
+    color: #fff;
+}
+
+/* Menu links */
+.side-menu ul {
+    list-style: none;
+    text-align: center;
+}
+.side-menu ul li {
+    margin: 25px 0;
+}
+.side-menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+}
+.side-menu ul li a:hover {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* Hamburger menu button */
+.menu-btn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    color: #00eaff;
+    cursor: pointer;
+    z-index: 2500;
+    transition: 0.3s;
+}
+.menu-btn:hover {
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* Hide hamburger on large screens if nav already exists */
+@media (min-width: 900px) {
+    .menu-btn {
+        display: none;
+    }
+}
